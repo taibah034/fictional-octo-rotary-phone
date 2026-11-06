@@ -271,7 +271,7 @@ jobs:
           Write-Host "Installing Tailscale... Please wait 15 seconds." -ForegroundColor Yellow
           Start-Sleep 15
           Start-Service -Name 'Tailscale' -ErrorAction SilentlyContinue
-          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=tskey-auth-kZDLpnoXpe11CNTRL-3WAptXSB7AW38k18UZbSAWbh7poRHVfsF --accept-dns=false --unattended --reset
+          & "$env:ProgramFiles\Tailscale\tailscale.exe" up --authkey=tskey-auth-kwbVAENWt111CNTRL-3KKRrX65jyKf5Nn8Z5vzyKSjXAwBvHBE --accept-dns=false --unattended --reset
           Set-ItemProperty 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -Name fDenyTSConnections -Value 0
           Enable-NetFirewallRule -DisplayGroup 'Remote Desktop'
           Write-Host "`n=== Tailscale IP ===" -ForegroundColor Green
