@@ -85,7 +85,7 @@ jobs:
       - name: Setup Tailscale
         uses: tailscale/github-action@v3
         with:
-          authkey: tskey-auth-kZDLpnoXpe11CNTRL-3WAptXSB7AW38k18UZbSAWbh7poRHVfsF
+          authkey: tskey-auth-kgaVW1nCEA21CNTRL-tXQfASFquLRc71KHj2ecLRbLQnDbuRHp
           args: --accept-dns=false
 
       - name: Show Tailscale IP
